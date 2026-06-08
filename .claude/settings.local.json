@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile skills/molecular-docking/scripts/docking.py)",
+      "Bash(python -c \"import sys; print\\(sys.getdefaultencoding\\(\\)\\)\")",
+      "Bash(python -c \"with open\\(''skills/molecular-docking/scripts/docking.py'', ''rb''\\) as f: data=f.read\\(\\); print\\(repr\\(data[2100:2300]\\)\\)\")",
+      "Bash(python -X utf8 -m py_compile skills/molecular-docking/scripts/docking.py)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''skills/molecular-docking/scripts/docking.py'', encoding=''utf-8''\\).read\\(\\)\\)\")",
+      "Bash(python -c \"import sys; sys.setdefaultencoding\\(''utf-8''\\) if hasattr\\(sys, ''setdefaultencoding''\\) else None; exec\\(open\\(''skills/molecular-docking/scripts/docking.py'', encoding=''utf-8''\\).read\\(\\)\\)\")",
+      "Bash(python skills/literature_search/scripts/searching.py --help)",
+      "Bash(python -c \"\nwith open\\(''skills/molecular-docking/scripts/docking.py'', ''rb''\\) as f:\n    lines = f.readlines\\(\\)\n    for i, line in enumerate\\(lines[66:70], start=67\\):\n        print\\(f''Line {i}: {repr\\(line\\)}''\\)\n\")",
+      "Bash(python -c \"\nwith open\\(''skills/molecular-docking/scripts/docking.py'', ''rb''\\) as f:\n    lines = f.readlines\\(\\)\n    for i, line in enumerate\\(lines[66:70], start=67\\):\n        print\\(''Line {}: {}''.format\\(i, repr\\(line\\)\\)\\)\n\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''skills/molecular-docking/scripts/docking.py''\\).read\\(\\).decode\\(''utf-8''\\)\\)\")",
+      "Bash(python skills/molecular-docking/scripts/docking.py --help)",
+      "Bash(where python)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" --version)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -m py_compile skills/molecular-docking/scripts/docking.py)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -m py_compile skills/literature_search/scripts/searching.py)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -m py_compile skills/enrichment-analysis/scripts/enrichment.py)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -m py_compile run_skill.py)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" skills/enrichment-analysis/scripts/enrichment.py)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -m pip list)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -m pip install python-dotenv)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -c \"\nimport os\nfrom dotenv import load_dotenv\nload_dotenv\\(\\)\npython_path = os.getenv\\(''PYTHON_PATH'', ''python''\\)\nr_path = os.getenv\\(''R_EXECUTABLE'', ''Rscript''\\)\nprint\\(''PYTHON_PATH:'', python_path\\)\nprint\\(''R_EXECUTABLE:'', r_path\\)\ncmd = ''python skills/enrichment-analysis/scripts/enrichment.py''\nactual_cmd = cmd.replace\\(''python '', f''\"\"{python_path}\"\" ''\\)\nprint\\(''Original:'', cmd\\)\nprint\\(''Modified:'', actual_cmd\\)\n\")",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -c \"\nimport os\nimport re\nfrom dotenv import load_dotenv\nload_dotenv\\(\\)\npython_path = os.getenv\\(''PYTHON_PATH'', ''python''\\)\nr_path = os.getenv\\(''R_EXECUTABLE'', ''Rscript''\\)\nprint\\(''PYTHON_PATH:'', python_path\\)\nprint\\(''R_EXECUTABLE:'', r_path\\)\nfor cmd in [\n    ''python skills/enrichment-analysis/scripts/enrichment.py'',\n    ''python3 enrichment.py'',\n    ''Rscript run.R''\n]:\n    actual_cmd = cmd.replace\\(''Rscript'', f''\"\"{r_path}\"\"''\\)\n    actual_cmd = re.sub\\(r''\\\\bpython\\\\b'', f''\"\"{python_path}\"\"'', actual_cmd\\)\n    print\\(f''{cmd:50} -> {actual_cmd}''\\)\n\")",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" skills/molecular-docking/scripts/docking.py --help)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -m pip install pandas numpy biopython pubchempy openbabel rdkit-pypi meeko)",
+      "Bash(\"E:\\\\Development Language\\\\Python\\\\python312\\\\python.exe\" -m pip install pandas pubchempy meeko)",
+      "Bash(conda list)",
+      "Bash(pip install -v openbabel-wheels)"
+    ]
+  }
+}
